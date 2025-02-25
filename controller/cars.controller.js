@@ -1,5 +1,12 @@
 let ParkingService = require("../service/parking.service")
 
+let data = ParkingService.getAllData()
+let renderIndex = (req, res, next) => {
+    res.render("index", {
+      cars: data
+    });
+  };
+
 let = getAllCars = (req,res,next) =>{
     let cars = ParkingService.getAllData()
     res.json({cars})
@@ -43,4 +50,4 @@ let postCars = (req, res) => {
   };
 
 
-module.exports = {getAllCars,postCars,updateCars,deleteCars}
+module.exports = {getAllCars,postCars,updateCars,deleteCars,renderIndex}

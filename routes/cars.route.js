@@ -4,6 +4,7 @@ let router = express.Router()
 let carsController = require("../controller/cars.controller")
 
 router.get("/", carsController.getAllCars);
+router.get("/index", carsController.renderIndex);
 router.post("/",carsController.postCars);
 router.put("/:id",carsController.updateCars)
 router.delete("/:id",carsController.deleteCars)

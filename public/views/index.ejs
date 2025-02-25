@@ -6,10 +6,13 @@
     <title>Online Parkovka</title>
 </head>
 <body>
+    
     <h1>Mashinalar ro'yxati</h1>
-    <ul id="cars_list">
-        <li><%=title%></li>
-    </ul>
+    <ol id="cars_list">
+        <%for(let i = 0; i<=cars.length - 1;i++) {%>
+        <li><%=cars[i].model%></li>
+        <%}%>
+    </ol>
     
 </body>
 </html>
