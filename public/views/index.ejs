@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Parkovka</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    
+    <div class="container">
+
+        <div class="box">
     <h1>Mashinalar ro'yxati</h1>
     <ol id="cars_list">
         <%for(let i = 0; i<=cars.length - 1;i++) {%>
         <li><%=cars[i].model%></li>
         <%}%>
     </ol>
+</div>
+
+<div class="box">
+    <h1>Mashinalar egalari</h1>
+    <ol id="cars_list">
+        <%for(let i = 0; i<=cars.length - 1;i++) {%>
+        <li><%=cars[i].owner%></li>
+        <%}%>
+    </ol>
+</div>
+
+<div class="box">
+    <h1>Mashinalar raqami</h1>
+    <ol id="cars_list">
+        <%for(let i = 0; i<=cars.length - 1;i++) {%>
+        <li><%=cars[i].number%></li>
+        <%}%>
+    </ol>
+</div>
+
+<div class="box">
+    <h1>Mashinalar vaqti</h1>
+    <ol id="cars_list">
+        <%for(let i = 0; i<=cars.length - 1;i++) {%>
+        <li><%=cars[i].parkedAt%></li>
+        <%}%>
+    </ol>
+</div>
+
+
+
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: red;
+    color: green;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .box{
+    background-color: green;
+}
